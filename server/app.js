@@ -20,6 +20,6 @@ app.use(router)
 
 
 
-app.listen("0.0.0.0",()=>{
+app.listen(5000,"0.0.0.0",()=>{
     console.log("this app is running on prot 5000")
     });
