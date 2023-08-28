@@ -4,7 +4,14 @@ const router = express.Router();
 
 const userController = require('../controller/userController');
 const attendanceController = require('../controller/checkInController');
+const authController = require('../controller/authController')
 
+
+
+router.post('/register',authController.Register)
+
+// login
+router.post('/login',authController.Login)
 
 // create Attendance
 router.post('/createAttendance',attendanceController.createAttendance);
